@@ -1,0 +1,40 @@
+/* all crimson teams should have the text color crimson */
+.crimson {
+    color: crimson;
+}
+
+/* all greenish teams should have the text color green */
+.greenish {
+    color: green;
+}
+
+/* michigan should have a hex code of ffcb05 */
+.maize {
+    color: #ffcb05;
+}
+
+/* red teams should have a red text color */
+.red {
+    color: red;
+}
+
+/* texas orange has a hex code of bf5700 */
+.burnt-orange {
+    color: #bf5700;
+}
+
+#yesButton {
+    /* celadon green for the yes button background */
+    background-color: #AFE1AF;
+
+    /* make the border cute by rounding the corners by 10px */
+    border-radius: 10px;
+}
+
+#noButton {
+    /* bright red for the no button background */
+    background-color: #EE4B2B;
+
+    /* make the border cute by rounding the corners by 10px */
+    border-radius: 10px;
+}
