@@ -1,0 +1,21 @@
+/* all the larger headings should be green */
+h1 {
+    color: green;
+}
+
+/* subheading should be purple */
+h2 {
+    color: purple;
+}
+
+/* contrasting background and text color for the paragraphs */
+p {
+    background-color: pink;
+    color: brown;
+}
+
+/* button should have its own styling with a blue background and white text */
+button {
+    background-color: blue;
+    color: white;
+}
