@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Patient form</title>
+</head>
+
+<body>
+
+    <!-- tell the users what the form is about -->
+    <h1>New Patient Form</h1>
+
+    <!-- instruct users on why this form is needed. redirect users to zocdoc to reschedule their appointment using an a tag -->
+    <p>
+        Please complete the form below before your first appointment with Dr. Gu. If you need to change your appointment, please reschedule 
+        <a href="https://book.zocdoc.com/get-started">here</a>.
+    </p>
+
+    <!-- create the form to get user input -->
+    <form action="#" method="post">
+
+        <!-- input for the patient's first name -->
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" minlength="2" maxlength="30" required>
+
+        <br><br>
+
+        <!-- input for the patient's last name -->
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" minlength="2" maxlength="30" required>
+
+        <br><br>
+
+        <!-- allow users to select their insurance from a list of insurance names -->
+        <label for="insuranceChoice">Select the type of insurance you have</label>
+        <select id="insuranceChoice" name="insuranceChoice" required>
+            <!-- first option should have placeholder text to tell users what the dropdown is about -->
+            <option value="">-- Select an insurance option --</option>
+
+            <!-- actual list of insurance options for users to choose from -->
+            <option value="aetna">Aetna</option>
+            <option value="cigna">Cigna</option>
+            <option value="premera">Premera</option>
+        </select>
+
+        <br><br>
+
+        <!-- asking patients for their previous medical history. use a textarea since it'll be a larger response -->
+        <label for="allergies">
+            Have you had any surgeries recently? Do you have any allergies, or any conditions we should be aware of?
+        </label>
+        <br>
+        <textarea id="allergies" name="allergies" rows="5" cols="40" placeholder="List any allergies here. If none, leave blank."></textarea>
+
+        <br><br>
+
+        <!-- allow users to submit after completing the form -->
+        <button type="submit">Complete form</button>
+    </form>
+</body>
+
+</html>
